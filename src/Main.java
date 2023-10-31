@@ -15,7 +15,7 @@ public class Main {
         Ravenclaw [] ravenclaws = new Ravenclaw[3];
         ravenclaws[0] = new Ravenclaw("Zhou", "Chang", 7, 6, 6, 8, 7,10);
         ravenclaws[1] = new Ravenclaw("Padma", "Patil", 9, 10, 8, 10, 8, 8);
-        ravenclaws[2] = new Ravenclaw("Marcus", "Belbyy", 7, 6, 8, 6, 9, 6);
+        ravenclaws[2] = new Ravenclaw("Marcus", "Belby", 7, 6, 8, 6, 9, 6);
 
         Hufflepuff [] hufflepuffs = new Hufflepuff[3];
         hufflepuffs[0] = new Hufflepuff("Zachariah", "Smith", 7, 6, 6, 8, 7);
