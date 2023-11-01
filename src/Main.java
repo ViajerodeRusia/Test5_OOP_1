@@ -26,5 +26,9 @@ public class Main {
         PrintService.print(gryffindors);
         PrintService.print(slytherins);
         PrintService.print(ravenclaws);
+        CompareService.compare(gryffindors, 0,1);
+        CompareService.compare(slytherins, 0,1);
+        CompareService.compare(ravenclaws, 0,1);
+        CompareService.compare(hufflepuffs, 0,1);
     }
 }
