@@ -1,6 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
+        System.out.println();
 
         Gryffindor [] gryffindors = new Gryffindor[3];
         gryffindors[0] = new Gryffindor("Harry", "Potter", 5, 7, 8, 8, 10);
@@ -21,5 +22,9 @@ public class Main {
         hufflepuffs[0] = new Hufflepuff("Zachariah", "Smith", 7, 6, 6, 8, 7);
         hufflepuffs[1] = new Hufflepuff("Cedric", "Diggory", 9, 10, 8, 10, 8);
         hufflepuffs[2] = new Hufflepuff("Justin", "Finch-Fletchley", 7, 6, 8, 6, 9);
+
+        PrintService.print(gryffindors);
+        PrintService.print(slytherins);
+        PrintService.print(ravenclaws);
     }
 }
