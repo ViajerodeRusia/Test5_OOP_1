@@ -25,11 +25,10 @@ public class Main {
                 hufflepuffs[0], hufflepuffs[1], hufflepuffs[2]};
 
         HogwartsServiceImpl hogwartsService = new HogwartsServiceImpl();
-        hogwartsService.compareHogwartsImpl(hogwarts, 1, 6);
+        hogwartsService.compareHogwartsImpl(hogwarts, 0, 10);
         hogwartsService.compareHogwartsHouseImpl(gryffindors, 1, 2);
         hogwartsService.compareHogwartsHouseImpl(slytherins, 1, 2);
         hogwartsService.compareHogwartsHouseImpl(ravenclaws, 1, 2);
         hogwartsService.compareHogwartsHouseImpl(hufflepuffs, 1, 2);
-
     }
 }

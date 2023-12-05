@@ -11,29 +11,9 @@ public abstract class Hogwarts {
         this.witchcraft = witchcraft;
     }
     public static void compareHogwarts(Hogwarts[] hogwarts, int first, int second) {
-        if(hogwarts[first].getTransgression() > hogwarts[second].getTransgression()) {
-            System.out.println("Transgression (" + hogwarts[first].getName() + " " + hogwarts[first].getSurname() + ")" + " > " +
-                    "transgression (" + hogwarts[second].getName() + " " + hogwarts[second].getSurname() + ")");
-        } else if (hogwarts[first].getTransgression()<hogwarts[second].getTransgression()){
-            System.out.println("Transgression (" + hogwarts[first].getName() + " " + hogwarts[first].getSurname() + ")" + " < " +
-                    "transgression (" + hogwarts[second].getName() + " " + hogwarts[second].getSurname() + ")");
-        } else if (hogwarts[first].getTransgression()==hogwarts[second].getTransgression()){
-            System.out.println("Transgression (" + hogwarts[first].getName() + " " + hogwarts[first].getSurname() + ")" + " = " +
-                    "transgression (" + hogwarts[second].getName() + " " + hogwarts[second].getSurname() + ")");
-        }
-        if(hogwarts[first].getWitchcraft()>hogwarts[second].getWitchcraft()) {
-            System.out.println("Witchcraft (" + hogwarts[first].getName() + " " + hogwarts[first].getSurname() + ")" + " > " +
-                    "Witchcraft (" + hogwarts[second].getName() + " " + hogwarts[second].getSurname() + ")");
-        } else if (hogwarts[first].getWitchcraft()<hogwarts[second].getWitchcraft()){
-            System.out.println("Witchcraft (" + hogwarts[first].getName() + " " + hogwarts[first].getSurname() + ")" + " < " +
-                    "Witchcraft (" + hogwarts[second].getName() + " " + hogwarts[second].getSurname() + ")");
-        } else if (hogwarts[first].getWitchcraft()==hogwarts[second].getWitchcraft()){
-            System.out.println("Witchcraft (" + hogwarts[first].getName() + " " + hogwarts[first].getSurname() + ")" + " = " +
-                    "Witchcraft (" + hogwarts[second].getName() + " " + hogwarts[second].getSurname() + ")");
-        }
-        System.out.println("_____________");
         int sum1 = hogwarts[first].getTransgression() + hogwarts[first].getWitchcraft();
         int sum2 = hogwarts[second].getTransgression() + hogwarts[second].getWitchcraft();
+        System.out.println("Comparison of two Hogwarts students:");
         if (sum1>sum2) {
             System.out.println("Total "+sum1+ " (" + hogwarts[first].getName() + " " + hogwarts[first].getSurname() + ")" + " > " +
                     "Total "+sum2+ " (" + hogwarts[second].getName() + " " + hogwarts[second].getSurname() + ")");

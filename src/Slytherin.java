@@ -12,39 +12,9 @@ public class Slytherin extends Hogwarts {
       this.lastForPower = lastForPower;
    }
    public static void compareHogwartsHouse(Slytherin[] slytherins,int first, int second){
-      if(slytherins[first].getCunning()>slytherins[second].getCunning()) {
-         System.out.println("Cunning (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " > " +
-                 "Cunning (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
-      } else if (slytherins[first].getCunning()<slytherins[second].getCunning()){
-         System.out.println("Cunning (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " < " +
-                 "Cunning (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
-      } else if (slytherins[first].getCunning()==slytherins[second].getCunning()){
-         System.out.println("Cunning (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " = " +
-                 "Cunning (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
-      }
-      if(slytherins[first].getDetermination()>slytherins[second].getDetermination()) {
-         System.out.println("Determination (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " > " +
-                 "Determination (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
-      } else if (slytherins[first].getDetermination()<slytherins[second].getDetermination()){
-         System.out.println("Determination (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " < " +
-                 "Determination (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
-      } else if (slytherins[first].getDetermination()==slytherins[second].getDetermination()){
-         System.out.println("Determination (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " = " +
-                 "Determination (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
-      }
-      if(slytherins[first].getAmbition()>slytherins[second].getAmbition()) {
-         System.out.println("Ambition (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " > " +
-                 "Ambition (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
-      } else if (slytherins[first].getAmbition()<slytherins[second].getAmbition()){
-         System.out.println("Ambition (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " < " +
-                 "Ambition (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
-      } else if (slytherins[first].getAmbition()==slytherins[second].getAmbition()){
-         System.out.println("Ambition (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " = " +
-                 "Ambition (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
-      }
-      System.out.println("_____________");
       int sum1 = slytherins[first].getCunning()+slytherins[first].getDetermination()+slytherins[first].getAmbition()+slytherins[first].getLastForPower();
       int sum2 = slytherins[second].getCunning()+slytherins[second].getDetermination()+slytherins[second].getAmbition()+slytherins[second].getLastForPower();
+      System.out.println("Comparison of two Slytherin students:");
       if (sum1>sum2) {
          System.out.println("Total "+sum1+ " (" + slytherins[first].getName() + " " + slytherins[first].getSurname() + ")" + " > " +
                  "Total "+sum2+ " (" + slytherins[second].getName() + " " + slytherins[second].getSurname() + ")");
