@@ -29,7 +29,7 @@ public class Gryffindor extends Hogwarts {
 
     @Override
     public String toString() {
-        return "Gryffindor: \n" + "Name: " + getName() + "Surname:" + getSurname() + "\n" +
+        return "Gryffindor student \n" + "Name: " + getName() + " Surname: " + getSurname() + "\n" +
                 "Transgression=" + getTransgression() + "\n" +
                 "Witchcraft=" + getWitchcraft() + "\n" +
                 "Nobility=" + nobility + "\n" +

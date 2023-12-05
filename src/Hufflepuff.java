@@ -25,6 +25,17 @@ public class Hufflepuff extends Hogwarts {
         }
         System.out.println("**************");
     }
+
+    @Override
+    public String toString() {
+        return "Hufflepuff student \n" + "Name: " + getName() + " Surname: " + getSurname() + "\n" +
+                "Transgression=" + getTransgression() + "\n" +
+                "Witchcraft=" + getWitchcraft() + "\n" +
+                "Diligence=" + diligence + "\n" +
+                "Loyalty=" + loyalty + "\n" +
+                "Honesty=" + honesty + "\n";
+    }
+
     public int getDiligence() {
         return diligence;
     }

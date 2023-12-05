@@ -27,6 +27,17 @@ public class Slytherin extends Hogwarts {
       }
       System.out.println("**************");
    }
+
+   @Override
+   public String toString() {
+      return "Slytherin student \n" + "Name: " + getName() + " Surname: " + getSurname() + "\n" +
+              "Transgression=" + getTransgression() + "\n" +
+              "Witchcraft=" + getWitchcraft() + "\n" +
+              "Cunning=" + cunning + "\n" +
+              "Determination=" + determination + "\n" +
+              "Ambition=" + ambition + "\n";
+   }
+
    public int getCunning() {
       return cunning;
    }

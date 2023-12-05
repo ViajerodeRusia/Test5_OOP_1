@@ -28,6 +28,17 @@ public class Ravenclaw extends Hogwarts {
         System.out.println("**************");
     }
 
+    @Override
+    public String toString() {
+        return "Ravenclaw student \n" + "Name: " + getName() + " Surname: " + getSurname() + "\n" +
+                "Transgression=" + getTransgression() + "\n" +
+                "Witchcraft=" + getWitchcraft() + "\n" +
+                "Intelligence=" + intelligence + "\n" +
+                "Wisdom=" + wisdom + "\n" +
+                "Wit=" + wit + "\n" +
+                "Creativity=" + creativity + "\n";
+    }
+
     public int getIntelligence() {
         return intelligence;
     }
